@@ -118,8 +118,8 @@ class Geoip
         }
 
         //get config from config file
-        $config['default_location'] = $this->config->get('geoip::default_location');
-        $config['default_location']['ip'] = $ip;
+        $default_location = $this->config->get('geoip::default_location');
+        $default_location['ip'] = $ip;
         // Check if the ip is not local or empty
         if ($this->checkIp($ip)) {
             $locale = $this->config->get('geoip::locale');
@@ -151,7 +151,7 @@ class Geoip
             }
             catch (AddressNotFoundException $e)
             {
-                return $config['default_location'];
+                return $default_location;
             }
 
             unset($iplocation);
@@ -159,7 +159,7 @@ class Geoip
             return $location;
         }
 
-        return $config['default_location'];
+        return $default_location;
     }
     /**
      *  Get the county information from maxmind GeoIp2\Record\Country object
