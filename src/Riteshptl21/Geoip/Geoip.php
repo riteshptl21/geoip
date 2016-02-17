@@ -127,7 +127,7 @@ class Geoip
                 if ($this->config->get('geoip::type') === 'web_service') {
                     $maxmind = new Client($this->config->get('geoip::user_id'), $this->config->get('geoip::license_key'));
                 } else {
-                    $maxmind = new Reader($config['database_path']);
+                    $maxmind = new Reader($this->config->get('geoip::database_path'));
                 }
             } catch(\Exception $e){
                 return Response::json(['please check config'],400);
