@@ -1,8 +1,10 @@
 # Maxmind GeoIP2 API For Laravel 4.2
-
 ## Description ##
+[![Latest Stable Version](https://poser.pugx.org/riteshptl21/geoip/v/stable)](https://packagist.org/packages/riteshptl21/geoip) [![Total Downloads](https://poser.pugx.org/riteshptl21/geoip/downloads)](https://packagist.org/packages/riteshptl21/geoip)
 
-Geoip is a Laravel package that aims to seamlessly integrate MaxMind functionality in laravel.
+Geoip is a Laravel package that aims to seamlessly integrate MaxMind functionality for determine the geographical location of IP addresses in laravel.
+
+
 
 Installation
 ------------
