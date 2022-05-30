@@ -58,7 +58,7 @@ array (
     "isoCode"       => "IN",
     "country"       => "India",
     "city"          => "Ahmedabad",
-    "state_code"         => "GJ",
+    "state_code"    => "GJ",
     "postal_code"   => "261201",
     "lat"           => 23.0333,
     "lon"           => 72.6167,
